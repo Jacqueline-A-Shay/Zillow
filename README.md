@@ -1,4 +1,4 @@
-**Predict property value with 2017 Zillow dataset**
+Predict property value with 2017 Zillow dataset
 
 Using various regression method, the purpose of this study is to construct a predicting model using various features in real life housing market.
 
