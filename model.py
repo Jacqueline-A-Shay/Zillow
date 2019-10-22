@@ -29,6 +29,13 @@ def evaluate(actual, model):
     return MSE, SSE, RMSE, r2 
     
 def plot_linear_model(actuals, lm, baseline):
+    # original df = 3col = "actual", "lm", "baseline"
+    # each col contain either y_train, model_predicted, "avg(y_train)"
+    # pass this df into .melt()
+    #.melt(id_vars=["index col, fix"], var_name=[cols, which is from dif models])
+    # .melt cont > "values from each column"
+    #.pipe()
+    # .pipe(plot_type, 'data' is a place holder for .melt(), rest is also plotting info)
     plot = pd.DataFrame({'actual': actuals,
                 'lm': lm,
                 'baseline': baseline.flatten()})\
